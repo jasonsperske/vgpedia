@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+
+	<filter>
+		<filter-name>UrlRewriteFilter</filter-name>
+		<filter-class>org.tuckey.web.filters.urlrewrite.UrlRewriteFilter</filter-class>
+		<init-param>
+			<param-name>logLevel</param-name>
+			<param-value>commons:FATAL</param-value>
+		</init-param>
+	
+		<init-param>
+			<param-name>statusEnabled</param-name>
+			<param-value>false</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>UrlRewriteFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<servlet>
+		<servlet-name>admin_dataimport_nintendo_nes_roms_Convert</servlet-name>
+		<servlet-class>net.vgpedia.servlets.admin.dataimport.nintendo.nes.roms.Convert</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>admin_dataimport_nintendo_nes_roms_Convert</servlet-name>
+		<url-pattern>/admin/dataimport/nintendo/nes/roms/Convert</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>admin_dataimport_nintendo_nes_roms_Import</servlet-name>
+		<servlet-class>net.vgpedia.servlets.admin.dataimport.nintendo.nes.roms.Import</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>admin_dataimport_nintendo_nes_roms_Import</servlet-name>
+		<url-pattern>/admin/dataimport/nintendo/nes/roms/Import</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>admin_dataimport_nintendo_nes_Convert</servlet-name>
+		<servlet-class>net.vgpedia.servlets.admin.dataimport.nintendo.nes.Convert</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>admin_dataimport_nintendo_nes_Convert</servlet-name>
+		<url-pattern>/admin/dataimport/nintendo/nes/Convert</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>admin_dataimport_nintendo_nes_Import</servlet-name>
+		<servlet-class>net.vgpedia.servlets.admin.dataimport.nintendo.nes.Import</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>admin_dataimport_nintendo_nes_Import</servlet-name>
+		<url-pattern>/admin/dataimport/nintendo/nes/Import</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>admin_news_Insert</servlet-name>
+		<servlet-class>net.vgpedia.servlets.admin.news.Insert</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>admin_news_Insert</servlet-name>
+		<url-pattern>/admin/news/Insert</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>admin_news_Update</servlet-name>
+		<servlet-class>net.vgpedia.servlets.admin.news.Update</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>admin_news_Update</servlet-name>
+		<url-pattern>/admin/news/Update</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>call_nintendo_nes_Search_xml</servlet-name>
+		<servlet-class>net.vgpedia.servlets.call.nintendo.nes.Search_xml</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>call_nintendo_nes_Search_xml</servlet-name>
+		<url-pattern>/call/nintendo/nes.xml</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>call_nintendo_nes_Game_xml</servlet-name>
+		<servlet-class>net.vgpedia.servlets.call.nintendo.nes.Game_xml</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>call_nintendo_nes_Game_xml</servlet-name>
+		<url-pattern>/call/nintendo/game.xml</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>games_nintendo_nes_admin_rom_Import</servlet-name>
+		<servlet-class>net.vgpedia.servlets.games.nintendo.nes.admin.rom.Import</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>games_nintendo_nes_admin_rom_Import</servlet-name>
+		<url-pattern>/games/nintendo/nes/admin/rom/Import</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>games_nintendo_nes_admin_cheat_Convert</servlet-name>
+		<servlet-class>net.vgpedia.servlets.games.nintendo.nes.admin.cheat.Convert</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>games_nintendo_nes_admin_cheat_Convert</servlet-name>
+		<url-pattern>/games/nintendo/nes/admin/cheat/Convert</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>games_nintendo_nes_admin_cheat_Import</servlet-name>
+		<servlet-class>net.vgpedia.servlets.games.nintendo.nes.admin.cheat.Import</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>games_nintendo_nes_admin_cheat_Import</servlet-name>
+		<url-pattern>/games/nintendo/nes/admin/cheat/Import</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>games_nintendo_nes_cheat_Insert</servlet-name>
+		<servlet-class>net.vgpedia.servlets.games.nintendo.nes.cheat.Insert</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>games_nintendo_nes_cheat_Insert</servlet-name>
+		<url-pattern>/games/nintendo/nes/cheat/Insert</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>games_nintendo_nes_Cheats_xml</servlet-name>
+		<servlet-class>net.vgpedia.servlets.games.nintendo.nes.Cheats_xml</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>games_nintendo_nes_Cheats_xml</servlet-name>
+		<url-pattern>/games/nintendo/nes/cheats.xml</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>search_games_nintendo_nes_Search_xml</servlet-name>
+		<servlet-class>net.vgpedia.servlets.search.games.nintendo.nes.Search_xml</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>search_games_nintendo_nes_Search_xml</servlet-name>
+		<url-pattern>/search/games/nintendo/nes.xml</url-pattern>
+	</servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>

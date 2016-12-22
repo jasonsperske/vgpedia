@@ -1,0 +1,152 @@
+html, body {
+	padding: 0;
+	margin: 0;
+	font-size: 9pt;
+	font-family: Verdana, sans-serif;
+	line-height: 20px;
+}
+#Logo {
+	position: absolute;
+}
+#Logo {
+	position: absolute;
+	top: 10px;
+	left: 28px;
+}
+#Logo h1 {
+	font-size: 9pt;
+	text-align: center;
+}
+#Logo a img {
+	border: 0;
+}
+#Menu {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	position: absolute;
+	top: 179px;
+	left: 21px;
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+	width: 178px;
+	background-color: White;
+	z-index: 2;
+}
+#Menu ul {
+	padding-left: 15px;
+}
+#Menu li {
+	list-style: none;
+}
+#Menu li a {
+	display: block;
+	width: 100%;
+	text-decoration: none
+}
+#Menu li a:hover {
+	background-color: #f0f0f0;
+}
+#Profile {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 6px;
+	position: absolute;
+	top: 260px;
+	left: 21px;
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+	width: 180px;	
+	background-color: White;
+	z-index: 2;
+}
+#Profile input {
+	width: 95%;
+	border: 1px solid black;
+}
+#Sponsor {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	position: absolute;
+	top: 400px;
+	left: 21px;
+	width: 140px;
+	background-color: White;
+	z-index: 2;
+	text-align: center;
+}
+#Sponsor a img {
+	border: 0;
+}
+#Content {
+	position: absolute;
+	top: 10px;
+	left: 200px;
+	border: 2px solid black;
+	border-left-width: 8px;
+	border-bottom-width: 8px;
+	width: 70%;
+	min-height: 500px;
+	height: auto;
+	z-index: 1;
+	padding: 10px;
+}
+span.NewsItem-date {
+	display: block;
+	width: 100%;
+	text-align: right;
+}
+/* for Internet Explorer */
+/*\*/
+* html #Content {
+	height: 500px;
+}
+/**/
+#Content h1 {
+	border-bottom: 2px solid black;
+}
+#Content h1 a {
+	text-decoration: none;
+}
+#Content h2 {
+	border-bottom: 1px solid black;
+}
+#Content h2 a {
+	text-decoration: none;
+}
+#Content table.Data {
+	width: 100%;
+}
+#Content table.Data thead th {
+	background-color: #000;
+	color: #fff;
+}
+#Content table.Data tr.Navigate td {
+	background-color: #CFCFCF;
+	color: gray;
+}
+#Content table.Data tr.Navigate td a {
+	text-decoration: none;
+}
+#Content table.Data tr.Navigate td span.Range {
+	font-weight: bold;
+	color: #000;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+table.Stats {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: White;
+}
+table.Stats {
+	font-size: 8pt;
+	width: 100%;
+	border-collapse: collapse;
+}
+table.Stats td.Label {
+	padding-top: 12px;
+	background-color: #A3A3A3;
+	vertical-align: top;
+	font-size: 13pt;
+}

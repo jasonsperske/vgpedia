@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE urlrewrite PUBLIC "-//tuckey.org//DTD UrlRewrite 2.6//EN"
+        "http://tuckey.org/res/dtds/urlrewrite2.6.dtd">
+<!--
+    Configuration file for UrlRewriteFilter
+    http://tuckey.org/urlrewrite/
+-->
+<urlrewrite>
+	<rule casesensitive="true">
+		<from>^/admin/news/([a-z_0-9]+)/edit(\?.*)?$</from>
+		<to>/admin/news/edit.jsp?key=$1</to>
+	</rule>
+
+	<rule casesensitive="true">
+		<from>^/games/nintendo/nes/([a-z_0-9\-!]+).html(\?.*)?$</from>
+		<to>/games/nintendo/nes/view.jsp?guid=$1</to>
+	</rule>
+
+	<rule casesensitive="true">
+		<from>^/games/nintendo/nes/([a-z_0-9\-!]+)/admin/cheat/(\?.*)?$</from>
+		<to>/games/nintendo/nes/admin/cheat/index.jsp?guid=$1</to>
+	</rule>
+
+	<rule casesensitive="true">
+		<from>^/games/nintendo/nes/([a-z_0-9\-!]+)/admin/rom/(\?.*)?$</from>
+		<to>/games/nintendo/nes/admin/rom/index.jsp?guid=$1</to>
+	</rule>
+
+	<rule casesensitive="true">
+		<from>^/games/nintendo/nes/([a-z_0-9\-!]+).xml(\?.*)?$</from>
+		<to>/games/nintendo/nes/cheats.xml?guid=$1</to>
+	</rule>
+</urlrewrite>
+
